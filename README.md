@@ -1,2 +1,2 @@
 # CV2_project
-This is a project for photo manipulation. It is an app to manipulate photo by changing its features. Project is made in Python. It uses libraries like openCV and Qt. 
+This is a project for image processing and analysis course. This application can be used to change certain features (like contrast or saturation) of an image and make common morphological operators like erosion and dilation. Project is written in Python and uses libraries like openCV and Qt. 
