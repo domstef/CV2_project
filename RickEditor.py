@@ -10,7 +10,7 @@ from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 
 
-class BiedaInstagram(object):
+class Application(object):
 
     def __init__(self):
         self.current_blur_value = 1
@@ -28,8 +28,8 @@ class BiedaInstagram(object):
 
 
     def application(self, window):
-        title = "Bieda Instagram"
-        window.setObjectName("Bieda Instagram")
+        title = "RickEditor"
+        window.setObjectName("RickEditor")
         window.resize(540, 570)
         window.setWindowTitle(title)
 
@@ -42,7 +42,7 @@ class BiedaInstagram(object):
         self.main_layout = QtWidgets.QGridLayout(self.centralwidget)
 
         self.gridLayout = QtWidgets.QGridLayout()
-        self.title_label = QtWidgets.QLabel("INSTAGRAM JAKBY META BYLA MALA FIRMA")
+        self.title_label = QtWidgets.QLabel("My funny application")
 
         self.tile = cv.imread("rick editor.png")
         title_image = cv.resize(self.tile, (550, 50))
@@ -360,7 +360,7 @@ if __name__ == "__main__":
     pos_y -= window.frameGeometry().center().y() * multiplier_y
     window.move(pos_x, pos_y)
 
-    bi = BiedaInstagram()
+    bi = Application()
     bi.application(window)
 
     window.show()
